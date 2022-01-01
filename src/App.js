@@ -1,18 +1,12 @@
-import styles from "./App.scss";
+import styles from "./App.module.scss";
+import Body from "./components/banner";
+import Header from "./components/header";
 
 function App() {
   return (
-    <div className={styles[""]}>
-      <header>
-        <span></span>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </header>
+    <div className={styles["home-page"]}>
+      <Header/>
+      <Body/>
     </div>
   );
 }

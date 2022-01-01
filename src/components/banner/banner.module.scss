@@ -1,0 +1,27 @@
+@import "./../../styles/template.scss";
+.banner {
+    width: 100%;
+    margin-top: 5rem;
+    @extend .container;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+        width: 100%;
+        max-width: 95%;
+    }
+    &__des {
+        margin: 2rem 0;
+        line-height: calc(30/16);
+    }
+    &__title {
+        // design line-height bao nhieu thì thay vào số 70, font-size bao nhiêu thì thay vào chỗ 50 -> line-height / font-size để ra line-height
+        line-height: calc(70/50);
+        font-size: 2rem;
+        font-weight: 500;
+        b {
+            font-weight: 700;
+        }
+    }
+}

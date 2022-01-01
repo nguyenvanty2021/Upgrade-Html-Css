@@ -1,0 +1,32 @@
+@import "./../../styles/template.scss";
+.header {
+    @extend .flex-between;
+    @extend .container;
+    width: 100%;
+    margin-top: 2.5rem;
+    &__btn {
+        button {
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+        }
+        &-signin {
+            border: none;
+        }
+        &-signup {
+            border: 1px solid red;
+            border-radius: 0.75rem;
+            color: red;
+        }
+    }
+    &__menu {
+        list-style: none;
+        @extend .flex-between;
+        > li {
+            text-transform: capitalize;
+        }
+        > li:not(:first-child) {
+            margin-left: 2.5rem;
+        }
+    }
+}

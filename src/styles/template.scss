@@ -11,47 +11,63 @@
 .flex-start {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-end {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-around {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 // column
 .flex-start-column {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-direction: column; // cần đảo thì dùng thêm reverse
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-end-column {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-direction: column; // cần đảo thì dùng thêm reverse
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-between-column {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-direction: column; // cần đảo thì dùng thêm reverse
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 .flex-around-column {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+  align-items: center; // start, end, center -> di chuyển từng item bên trong thằng cha
+  // align-content: center; // start, end, center -> di chuyển toàn bộ item nằm trong thằng cha hay nói cách khác là di chuyển toàn bộ thằng cha
+  flex-direction: column; // cần đảo thì dùng thêm reverse
+  flex-wrap: wrap; // VD: thằng cha có width là 100%, bên trong có 5 thằng con mỗi thằng con width 33% thì đáng lẽ 1 dòng chỉ có 3 thằng con thôi nhưng vì dùng display:flex nên tất cả thằng con đều nằm cùng 1 dòng, dùng thuộc tính flex-wrap: wrap này thì khi quá width của thằng cha những thằng con nào quá sẽ tự động xuống dòng
 }
 //@import "./template.scss;
 // Example

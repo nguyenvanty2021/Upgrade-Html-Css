@@ -1,6 +1,7 @@
 @import "./styles/_reset.scss";
 @import "./styles//template.scss";
 html {
+  // VD: cho width 33% nhưng khi dùng border or padding kích thước lúc này sẽ tăng lên mức 33% -> dùng box-sizing: border-box thì lúc này vẫn cố định là width 33% cái padding or border này sẽ nằm bên trong mức 33% chứ không tăng lên vượt quá mức 33% 
   box-sizing: border-box;
 }
 body {

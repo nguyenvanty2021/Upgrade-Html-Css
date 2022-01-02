@@ -5,6 +5,8 @@ import BannerImage from "./../../assets/home-page/Banner/banner.png";
 const Body = () => {
   return (
     <main>
+      {/* ngoài header + footer những phần tử trên UI đều là 1 section và tất cả những section này đều nằm trong thẻ main -> gọi tắt là component body */}
+      {/* mỗi section là 1 component riêng không phải viết trực tiếp giống vậy */}
       <section className={styles["banner"]}>
         <div className={styles["banner-left"]}>
           <h1 className={styles["banner__title"]}>
@@ -36,6 +38,7 @@ const Body = () => {
         </span>
       </section>
       {/* ngoài header + footer những phần tử trên UI đều là 1 section và tất cả những section này đều nằm trong thẻ main -> gọi tắt là component body */}
+      {/* mỗi section là 1 component riêng không phải viết trực tiếp giống vậy */}
       <section></section>
       <section></section>
       <section></section>

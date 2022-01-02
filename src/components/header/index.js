@@ -9,6 +9,7 @@ const Header = () => {
       <span>
         <ImageComponent srcProps={Logo} altProps="Logo" classProps={{width: "7.5rem"}} />
       </span>
+      {/* thẻ ul, li là thẻ danh sách (dùng cho các menu, danh mục, list...) */}
       <ul className={styles["header__menu"]}>
         <li>
           <a href="#">about</a>
